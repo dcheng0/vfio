@@ -1,0 +1,7 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora/root rd.luks.uuid=luks-ca91f71d-8146-42a4-ac05-b3408d9d9900 rd.lvm.lv=fedora/swap rhgb quiet iommu=1 amd_iommu=on rd.driver.pre=vfio-pci"
+GRUB_DISABLE_RECOVERY="true"
